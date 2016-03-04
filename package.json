@@ -1,6 +1,6 @@
 {
   "name": "tupaijs-simple-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a simple proxy server for tupaijs",
   "dependencies" : {
     "tupaijs": "0.1.12",

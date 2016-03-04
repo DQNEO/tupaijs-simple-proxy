@@ -19,6 +19,7 @@ var tupaiPort = 30000;
 
 var proxyURL;
 
+var tupaiDirDefault = path.resolve(__dirname, '../node_modules/tupaijs');
 var tupaiDir;
 var tupai;
 var baseDir;
@@ -42,7 +43,7 @@ function main() {
     proxyURL = program.args[0];
     console.log('proxy: ' + proxyURL);
 
-    tupaiDir = program.tupaidir ? path.resolve(program.tupaidir) : path.resolve(__dirname, "..");
+    tupaiDir = program.tupaidir ? path.resolve(program.tupaidir) : tupaiDirDefault;
     console.log('tupaiDir: ' + tupaiDir);
     tupai  = require(path.join(tupaiDir, 'scripts', 'nodejs'));
     baseDir = program.basedir ? program.basedir : '.';
