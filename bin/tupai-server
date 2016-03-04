@@ -32,7 +32,6 @@ function main() {
             .option('-g, --generate', 'generate files before running server')
             .parse(process.argv);
 
-    console.log('-s ' + program.upstream);
     console.log(' args: %j', program.args);
 
     //upstream server URL to proxy requests. e.g. http://localhost:8080/
