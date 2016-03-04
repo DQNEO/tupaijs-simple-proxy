@@ -28,22 +28,18 @@ function main() {
     program
             .usage('[options] <URL of upstream server>')
             .option('-p, --printLog', 'print log to stdout. default is off')
-            .option('-t, --tupaidir <dir>', 'tupaijs base directory')
             .option('-d, --basedir <dir>', 'working directory')
             .option('-g, --generate', 'generate files before running server')
             .parse(process.argv);
 
     console.log('-s ' + program.upstream);
-
-    console.log('-t ' + program.tupaidir);
-
     console.log(' args: %j', program.args);
 
     //upstream server URL to proxy requests. e.g. http://localhost:8080/
     proxyURL = program.args[0];
     console.log('proxy: ' + proxyURL);
 
-    tupaiDir = program.tupaidir ? path.resolve(program.tupaidir) : tupaiDirDefault;
+    tupaiDir = tupaiDirDefault;
     console.log('tupaiDir: ' + tupaiDir);
     tupai  = require(path.join(tupaiDir, 'scripts', 'nodejs'));
     baseDir = program.basedir ? program.basedir : '.';
