@@ -9,5 +9,5 @@ a simple proxy server for tupaijs
 # USAGE
 
 ```
-tupai-server http://localhost:8080/
+tupai-server -d path/to/workdir http://localhost:8080/
 ```
