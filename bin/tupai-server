@@ -5,7 +5,6 @@ var path = require('path');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
 var http = require('http');
-var ejs = require('ejs');
 var express = require('express');
 var favicon = require('serve-favicon');
 var httpProxy = require('http-proxy');
