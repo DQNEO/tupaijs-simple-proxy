@@ -10,7 +10,9 @@
     "serve-favicon":"2.3.0",
     "http-proxy": "1.12.0"
   },
-  "main": "index.js",
+  "bin": {
+    "tupai-server": "./bin/tupai-server"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
