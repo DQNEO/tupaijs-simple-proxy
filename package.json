@@ -19,5 +19,8 @@
     "proxy"
   ],
   "author": "DQNEO",
-  "license": "MIT"
+  "license": {
+    "type" : "MIT",
+    "url" : "http://tupaijs.com/license.html"
+  }
 }
