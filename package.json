@@ -21,6 +21,11 @@
     "proxy"
   ],
   "author": "DQNEO",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DQNEOt/upaijs-simple-proxy.git"
+  },
   "license": {
     "type" : "MIT",
     "url" : "http://tupaijs.com/license.html"
